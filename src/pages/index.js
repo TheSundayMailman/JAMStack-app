@@ -1,9 +1,9 @@
 import React from 'react'
 // import { Link } from 'gatsby'
 
-import '../components/normalize.css'
-import '../components/float-grid.css'
-import '../components/index.css'
+import '../styles/normalize.css'
+import '../styles/float-grid.css'
+import '../styles/index.css'
 
 const IndexPage = () => (
   <React.Fragment>
@@ -13,7 +13,7 @@ const IndexPage = () => (
     <label htmlFor="toggle">&#9776;</label>
     <input type="checkbox" id="toggle" />
     <section className="menu">
-      <a target="_blank" rel="noopener noreferrer" href="./files/albert-sare-resume.pdf"><i className="fas fa-file-alt fa-fw" aria-hidden="true"></i>&nbsp;Résumé</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://albert-sare.netlify.com/files/albert-sare-resume.pdf"><i className="fas fa-file-alt fa-fw" aria-hidden="true"></i>&nbsp;Résumé</a>
       <a target="_blank" rel="noopener noreferrer" href="https://github.com/TheSundayMailman"><i className="fab fa-github fa-fw" aria-hidden="true"></i>&nbsp;GitHub</a>
       <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/albert-sare"><i className="fab fa-linkedin fa-fw" aria-hidden="true"></i>&nbsp;LinkedIn</a>
     </section>
@@ -100,6 +100,64 @@ const IndexPage = () => (
         </section>
       </div>
     </article>
+    <article className="others">
+      <div className="row">
+        <section className="col-12 box">
+          <h1 className="section-header"><i className="fas fa-camera fa-fw" aria-hidden="true"></i>&nbsp;Fun Stuff</h1>
+          <p>On my off times, I'm also ordained to marry photography and collectibles into a lovely blend. Playing with action figures is never out of style.</p>
+          <p><span className="focus-text">Bokeh</span> (pronounced <span style={{ fontStyle: 'italic' }}>BOH-kay</span>, from the Japanese word [<span title="Japanese language text" lang="ja">暈け</span>] meaning "haze") is an aesthetic quality of blur produced by out-of-focus portions of an image. It's also my choice technique for highlighting my subjects.</p>
+          <p>Check out some of my work!</p>
+        </section>
+      </div>
+      <div className="row">
+        <section className="col-6 box">
+          <div className="container">
+            <img className="content-pic" src={require('../assets/joker-harley.jpg')} alt="Joker and Harlye Quinn taking a selfie." />
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/bokehheroes">
+              <div className="overlay">
+                <p className="overlay-text" aria-hidden="true">Click for more!</p>
+              </div>
+            </a>
+          </div>
+          <p className="caption-text">Joker and Harley, always up to no good...</p>
+        </section>
+        <section className="col-6 box">
+          <div className="container">
+            <img className="content-pic" src={require('../assets/kirby-super-star.jpg')} alt="Kirby eating french fries." />
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/bokehheroes">
+              <div className="overlay">
+                <p className="overlay-text" aria-hidden="true">Click for more!</p>
+              </div>
+            </a>
+          </div>
+          <p className="caption-text">Kirby, just doing his thing.</p>
+        </section>
+      </div>
+      <div className ="row">
+        <section className="col-6 box">
+          <div className="container">
+            <img className="content-pic" src={require('../assets/big-boss.jpg')} alt="Big Boss prawling in a field of grass." />
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/bokehheroes">
+              <div className="overlay">
+                <p className="overlay-text" aria-hidden="true">Click for more!</p>
+              </div>
+            </a>
+          </div>
+          <p className="caption-text">Big Boss, snaking around...</p>
+        </section>
+        <section className="col-6 box">
+          <div className="container">
+            <img className="content-pic" src={require('../assets/princess-leia.jpg')} alt="Princess Leia gazing into a hologram." />
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/bokehheroes">
+              <div className="overlay">
+                <p className="overlay-text" aria-hidden="true">Click for more!</p>
+              </div>
+            </a>
+          </div>
+          <p className="caption-text">Princess Leia, hologram gazing.</p>
+        </section>
+      </div>
+    </article>
     <footer role="contentinfo">
     <div className="row">
       <section className="col-4 box">
@@ -114,13 +172,13 @@ const IndexPage = () => (
       </section>
       <section className="col-4 box">
         <ul><span className="list-header">Check Me Out</span>
-          <li><a target="_blank" rel="noopener noreferrer" href="./files/albert-sare-resume.pdf"><i className="fas fa-file-alt fa-fw" aria-hidden="true"></i>&nbsp;Résumé</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://albert-sare.netlify.com/files/albert-sare-resume.pdf"><i className="fas fa-file-alt fa-fw" aria-hidden="true"></i>&nbsp;Résumé</a></li>
           <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/TheSundayMailman"><i className="fab fa-github fa-fw" aria-hidden="true"></i>&nbsp;GitHub</a></li>
           <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/albert-sare"><i className="fab fa-linkedin fa-fw" aria-hidden="true"></i>&nbsp;LinkedIn</a></li>
           <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/bokehheroes"><i className="fab fa-instagram fa-fw" aria-hidden="true"></i>&nbsp;Instagram</a></li>
         </ul>
       </section>
-      <a id="footer-footer" href="#top"><i class="fas fa-arrow-circle-up fa-fw" aria-hidden="true"></i>&nbsp;Back to top</a>
+      <a id="footer-footer" href="#top"><i className="fas fa-arrow-circle-up fa-fw" aria-hidden="true"></i>&nbsp;Back to top</a>
     </div>
   </footer>
   </main>
